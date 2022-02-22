@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form  method="POST" action="{{url_for('contact')}}">
+    <h2>Contact Form</h2>
+    <hr>
+    <p>Fill in this form to contact the site owners.</p>
+
+    <div>
+        {{ form.csrf_token }}
+        {{ form.name.label}} 
+        <p>Please enter full name.</p>
+        {{ form.name }}
+    </div>
+    <div>
+        {{ form.csrf_token }}
+        {{ form.email.label }}
+        <p>Please enter your email address.</p>
+        {{ form.email }}
+    </div>
+    <div>
+        {{ form.csrf_token }}
+        {{ form.subject.label }}
+        <p>Please enter subject for your message.</p>
+        {{ form.subject }}
+    </div> 
+    <div>
+        {{ form.csrf_token }}
+        {{ form.message.label }}
+        <p>Please enter the message you would like to send.</p>
+        {{ form.message }}
+    </div>
+    {{ form.submit }}
+
+
+</form>
+
+{% endblock %}

@@ -1,3 +1,47 @@
 body {
     padding-top: 5rem;
 }
+/* Contact Form */
+form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  form input#name,
+  form input#email,
+  form input#subject,
+  form input#message{
+    width: 400px;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    font-size: 1.1em;
+  }
+  
+  form textarea#message {
+    width: 500px;
+    height: 100px;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.1em;
+  }
+  
+  form input#submit {
+    display: block;
+    border:1px solid rgb(60, 141, 233);
+    background-color: rgb(60, 141, 233);
+    padding: 10px; 
+    font-weight:bold; 
+    text-align: center; 
+    color: #000000; 
+  }
+  
+  form input#submit:hover{
+    cursor: pointer;
+    border:1px solid #c1c1c1; 
+    background-color: #dbdbdb;
+  }
